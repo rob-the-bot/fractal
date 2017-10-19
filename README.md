@@ -1,6 +1,8 @@
 # Fractal generation
 
-A simple program in C to generate Newton fractal using arbitrary-precision math library.
+A simple program in C to generate Newton fractal.
+GNU MPC is used as the complex numbers math library with arbitrarily high precision.
+OpenMP and MPI are both supported for parallel computing.
 
 # Usage
 
@@ -30,8 +32,8 @@ slurm parameters can be modified (not hard coded in fract.c) at line 22 in `go.s
 Comment: spec names can be given in the format like 20px_15px_zoom_1e_-10_20 which mean width is 20, height is 15, zoom in value 1e-10, 20 frames.
 For each testing files:
 
-1. 20px_15px_zoom_1e-10_20 -> testing scalibility (zoom to to 1e-190)
-2. 20px_15px_zoom_1e-50_20 -> testing scalibility (zoom to to 1e-950),also compare speed with No.1
+1. 20px_15px_zoom_1e-10_20 -> testing scalability (zoom to to 1e-190)
+2. 20px_15px_zoom_1e-50_20 -> testing scalability (zoom to to 1e-950),also compare speed with No.1
 3. 1024px_768px_zoom_0.95_820 -> test the speed while using double precision (small problems, speed should be fast)
 4. 400px_300px_zoom_0.95_820 -> compare speed with No.3
 5. 20px_15px_zoom_0.95_820 -> compare speed with No.4
