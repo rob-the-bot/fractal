@@ -12,8 +12,8 @@ make
 The spec file indicates
 
 - resolution
-- range?
-- range?
+- leftx, lefty
+- rightx, righty
 - Zoom level
 - Number of frames
 
